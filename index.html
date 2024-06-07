@@ -1,0 +1,270 @@
+<html>
+    <head>
+        <title>CV</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+    line-height: 1.5;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            margin-top: 18px;
+            padding: 0 60px;
+            box-sizing: border-box;
+        }
+        .sub-container{
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        .left{
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+            display: flex;
+            flex-direction: column;
+            flex-basis: 35%;
+            
+        }
+        .right{
+            flex-basis: 65%;
+        }
+        .photo{
+            display: block;
+            position: relative;
+        }
+        .photo-image{
+            width: 100%;
+        }
+        .photo-name{
+            color: white;
+            font-size: xx-large;
+            padding-left: 10px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+        .profile-detail{
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+            grid-template-rows: repeat(4, 30px);
+            padding: 10px;
+        }
+        .profile-logo{
+            padding: 10px;
+            color: #009688;
+        }
+        .profile-value{
+            padding: 10px;
+        }
+        .skill-main-title{
+            font-weight: bold;
+        }
+        .skills{
+            padding: 10px;
+        }
+        .skill{
+            padding-top: 10px;
+        }
+        .skill-title{
+            font-weight: bold;
+            padding: 10px;
+        }
+        .skill-container{
+            margin: 10px;
+            background-color: #f1f1f1;
+            border-radius: 16px;
+        }
+        .skill-percent{
+            height: 20px;
+            text-align: center;
+            background-color: #009688;
+            color: white;
+            border-radius: 16px;
+        }
+        .work-container{
+            font-size: 30px;
+            color: #009688;
+        }
+        .work-logo{
+            margin-right: 10px;
+        }
+        .section{
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        }
+        .card{
+            line-height: 2;
+            padding: 10px;
+        }
+        .card-title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .card-dates-container{
+            font-size: 20px;
+            color: #009688;
+        }
+        .card-dates-logo{
+            margin: 5px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .sub-container{
+                flex-wrap: wrap;
+            }
+            .left{
+                flex-grow: 1;
+            }
+            .right{
+                flex-grow: 1;
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="sub-container">
+                <div class="left">
+                    <div class="photo">
+                        <img class="photo-image" src="img/me.jpg"/>
+                        <div class="photo-name">
+                            Andreas Billy Sutandi
+                        </div>
+                    </div>
+                    <div class="profile-detail">
+                        <div class="profile-logo"><span class="fa fa-briefcase"></span></div>
+                        <div class="profile-value">Software Developer</div>
+                        <div class="profile-logo"><span class="fa fa-home"></span></div>
+                        <div class="profile-value">Jakarta, ID</div>
+                        <div class="profile-logo"><span class="fa fa-envelope"></span></div>
+                        <div class="profile-value">billyfebram@gmail.com</div>
+                        <div class="profile-logo"><span class="fa fa-phone"></span></div>
+                        <div class="profile-value">+6285883542397</div>
+                    </div>
+                    <hr/>
+                    <div class="skills">
+                        <span class="profile-logo"><span class="fa fa-asterisk"></span></span>
+                        <span class="skill-main-title">
+                            SKILLS
+                        </span>
+                        <div class="skill">
+                            <span class="skill-title">Java</span>
+                            <div class="skill-container">
+                                <div class="skill-percent" style="width:90%">90%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-title">SQL</span>
+                            <div class="skill-container">
+                                <div class="skill-percent" style="width:80%">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-title">ReactJS</span>
+                            <div class="skill-container">
+                                <div class="skill-percent" style="width:85%">85%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-title">HTML</span>
+                            <div class="skill-container">
+                                <div class="skill-percent" style="width:85%">85%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-title">CSS</span>
+                            <div class="skill-container">
+                                <div class="skill-percent" style="width:80%">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="section section-1">
+                        <div class="work-container">
+                            <span class="work-logo fa fa-suitcase"></span>
+                            <span class="work-title">Work Experience</span>
+                        </div>
+    
+                        <div class="card">
+                            <div class="card-title">Backend Engineer / sales.amanyaman.com</div>
+                            <div class="card-dates-container">
+                                <span class="fa fa-calendar card-dates-logo"></span>
+                                <span class="card-dates-value">Jan 2024 - Current</span>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Master Data</li>
+                                    <li>Transaction</li>
+                                    <li>Reporting</li>
+                                </ul>
+                            </div>
+                        </div>     
+                        
+                        <div class="card">
+                            <div class="card-title">Frontend Engineer / andreasbilly.vercel.app</div>
+                            <div class="card-dates-container">
+                                <span class="fa fa-calendar card-dates-logo"></span>
+                                <span class="card-dates-value">June 2024</span>
+                            </div>
+                            <div>Create layout template from scratch using flex, grid layout</div>
+                        </div>     
+
+                        <div class="card">
+                            <div class="card-title">DevOps Engineer / amazon.com</div>
+                            <div class="card-dates-container">
+                                <span class="fa fa-calendar card-dates-logo"></span>
+                                <span class="card-dates-value">Jan 2015 - Current</span>
+                            </div>
+                            <div>Other Job Experience</div>
+                        </div>     
+                    </div>
+                    <div class="section section-2">
+                        <div class="work-container">
+                            <span class="work-logo fa fa-asterisk"></span>
+                            <span class="work-title">Education</span>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-title">Universitas Gunadarma</div>
+                            <div class="card-dates-container">
+                                <span class="fa fa-calendar card-dates-logo"></span>
+                                <span class="card-dates-value">2011 - 2015</span>
+                            </div>
+                            <div>Bachelor Degree</div>
+                        </div>     
+                        
+                        <div class="card">
+                            <div class="card-title">PSKD 7 Depok</div>
+                            <div class="card-dates-container">
+                                <span class="fa fa-calendar card-dates-logo"></span>
+                                <span class="card-dates-value">2009 - 2012</span>
+                            </div>
+                            <div>Sekolah Dasar</div>
+                        </div> 
+                        <div class="card">
+                            <div class="card-title">Mardi Waluya Bogor</div>
+                            <div class="card-dates-container">
+                                <span class="fa fa-calendar card-dates-logo"></span>
+                                <span class="card-dates-value">2006 - 2009</span>
+                            </div>
+                            <div>Sekolah Menengah Pratama</div>
+                        </div> 
+                        <div class="card">
+                            <div class="card-title">Mardi Yuana Bogor</div>
+                            <div class="card-dates-container">
+                                <span class="fa fa-calendar card-dates-logo"></span>
+                                <span class="card-dates-value">2000 - 2006</span>
+                            </div>
+                            <div>Sekolah Dasar</div>
+                        </div>                 
+                    </div>
+
+                </div>
+            </div>            
+        </div>
+    </body>
+</html>
